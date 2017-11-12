@@ -1,0 +1,4 @@
+PG_DBNAME=ttt_db
+PG_HOST=localhost
+PG_USERNAME=postgres
+PG_PASSWORD=password

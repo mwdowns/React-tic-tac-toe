@@ -58,9 +58,17 @@ class Game extends React.Component {
         let status;
         let reset = <button>Reset Game</button>;
         if (winner) {
+            const historyArr = history.map(function(x) {
+                return x.squares;
+            });
             status = 'Winner, Winner, Chicken dinner: ' + winner;
+            console.log(historyArr);
             save = <button>Save Game</button>
         } else if (this.state.stepNumber >= 9) {
+            const historyArr = history.map(function(x) {
+                return x.squares;
+            });
+            console.log(historyArr)
             status = "Cat!"
             save = <button>Save Game</button>
         } else {
